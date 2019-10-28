@@ -1,0 +1,10 @@
+C:\Users\Pika\Desktop\ATM\ATM_Machine\ATM_Machine\bin\Debug\netcoreapp2.1\ATM_Machine.deps.json
+C:\Users\Pika\Desktop\ATM\ATM_Machine\ATM_Machine\bin\Debug\netcoreapp2.1\ATM_Machine.runtimeconfig.json
+C:\Users\Pika\Desktop\ATM\ATM_Machine\ATM_Machine\bin\Debug\netcoreapp2.1\ATM_Machine.runtimeconfig.dev.json
+C:\Users\Pika\Desktop\ATM\ATM_Machine\ATM_Machine\bin\Debug\netcoreapp2.1\ATM_Machine.dll
+C:\Users\Pika\Desktop\ATM\ATM_Machine\ATM_Machine\obj\Debug\netcoreapp2.1\ATM_Machine.csprojAssemblyReference.cache
+C:\Users\Pika\Desktop\ATM\ATM_Machine\ATM_Machine\obj\Debug\netcoreapp2.1\ATM_Machine.AssemblyInfoInputs.cache
+C:\Users\Pika\Desktop\ATM\ATM_Machine\ATM_Machine\obj\Debug\netcoreapp2.1\ATM_Machine.AssemblyInfo.cs
+C:\Users\Pika\Desktop\ATM\ATM_Machine\ATM_Machine\bin\Debug\netcoreapp2.1\ATM_Machine.pdb
+C:\Users\Pika\Desktop\ATM\ATM_Machine\ATM_Machine\obj\Debug\netcoreapp2.1\ATM_Machine.dll
+C:\Users\Pika\Desktop\ATM\ATM_Machine\ATM_Machine\obj\Debug\netcoreapp2.1\ATM_Machine.pdb
