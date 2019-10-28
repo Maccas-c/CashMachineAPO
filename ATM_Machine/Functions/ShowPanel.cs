@@ -12,14 +12,7 @@ namespace ATM_Machine.Functions
             Console.WriteLine("Please insert card (enter your card number)");
             
             int number = Convert.ToInt32(Console.ReadLine());
-            while (!Console.KeyAvailable)
-            {
-                if (Console.ReadKey().Key.ToString() == "Enter")
-                {
-                    Console.WriteLine("Please enter your PIN code: ");
-                }
-                break;
-            }
+            Console.WriteLine("Please enter your PIN code: ");
             string PIN = Console.ReadLine();
             Authentication.CheckPIN(PIN, number);
         }
@@ -50,6 +43,7 @@ namespace ATM_Machine.Functions
                 }
                 else if (number == 4)
                 {
+                    Console.WriteLine("Enter account number");
                     Account.MakeTransfer(id);
                 }
             } while (number != 5);

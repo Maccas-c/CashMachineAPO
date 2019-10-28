@@ -18,8 +18,7 @@ namespace ATM_Machine.Functions
                     foreach(var i in id)
                     {
                         ShowPanel.ShowPossibilities(i);
-                    }
-                    
+                    }                    
                 }
             }
             else
