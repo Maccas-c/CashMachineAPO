@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pika\\Desktop\\ATM\\ATM_Machine\\ATM_Machine\\ATM_Machine.csproj": {}
+    "C:\\Users\\Pika\\Desktop\\ATM\\CashMachineAPO\\ATM_Machine\\ATM_Machine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pika\\Desktop\\ATM\\ATM_Machine\\ATM_Machine\\ATM_Machine.csproj": {
+    "C:\\Users\\Pika\\Desktop\\ATM\\CashMachineAPO\\ATM_Machine\\ATM_Machine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pika\\Desktop\\ATM\\ATM_Machine\\ATM_Machine\\ATM_Machine.csproj",
+        "projectUniqueName": "C:\\Users\\Pika\\Desktop\\ATM\\CashMachineAPO\\ATM_Machine\\ATM_Machine.csproj",
         "projectName": "ATM_Machine",
-        "projectPath": "C:\\Users\\Pika\\Desktop\\ATM\\ATM_Machine\\ATM_Machine\\ATM_Machine.csproj",
+        "projectPath": "C:\\Users\\Pika\\Desktop\\ATM\\CashMachineAPO\\ATM_Machine\\ATM_Machine.csproj",
         "packagesPath": "C:\\Users\\Pika\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pika\\Desktop\\ATM\\ATM_Machine\\ATM_Machine\\obj\\",
+        "outputPath": "C:\\Users\\Pika\\Desktop\\ATM\\CashMachineAPO\\ATM_Machine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

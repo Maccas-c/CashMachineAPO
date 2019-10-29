@@ -51,24 +51,28 @@ namespace ATM_Machine.Data
                     Id = new Guid("3686f45d-5e74-4666-ae76-6cf898d36f90"),
                     Name = "Piotr",
                     LastName = "Kowalski",
+                    AccountNumber = "123456789",
                     IsAbleToTransfer = true,
                 },
                 new Owner() {
                     Id = new Guid("98d50544-b91e-4491-9bf9-a4d601e5f873"),
                     Name = "Maciej",
                     LastName = "Nowak",
+                    AccountNumber = "234567899",
                     IsAbleToTransfer = true,
                 },
                 new Owner() {
                     Id = new Guid("9710bb72-956f-4aca-ad4e-9fa133e385d4"),
                     Name = "Wojciech",
                     LastName = "Janicki",
+                    AccountNumber = "111111111",
                     IsAbleToTransfer = true,
                 },
                 new Owner() {
                     Id = new Guid("8f18e657-4611-4ce1-9854-279fa327144c"),
                     Name = "Adam",
                     LastName = "Olejniczak",
+                    AccountNumber = "999999999",
                     IsAbleToTransfer = true,
                 },
             };

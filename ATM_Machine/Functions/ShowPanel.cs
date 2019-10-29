@@ -5,21 +5,14 @@ using System.Text;
 
 namespace ATM_Machine.Functions
 {
-    class ShowPanel
+    public class ShowPanel
     {
         public static void ShowStart()
         {
             Console.WriteLine("Please insert card (enter your card number)");
             
             int number = Convert.ToInt32(Console.ReadLine());
-            while (!Console.KeyAvailable)
-            {
-                if (Console.ReadKey().Key.ToString() == "Enter")
-                {
-                    Console.WriteLine("Please enter your PIN code: ");
-                }
-                break;
-            }
+            Console.WriteLine("Please enter your PIN code: ");
             string PIN = Console.ReadLine();
             Authentication.CheckPIN(PIN, number);
         }
@@ -32,8 +25,7 @@ namespace ATM_Machine.Functions
             Console.WriteLine("1. Show current account status");
             Console.WriteLine("2. Withdraw money");
             Console.WriteLine("3. Get code for phone");
-            Console.WriteLine("4. Make a transfer");
-            Console.WriteLine("5. Exit");
+            Console.WriteLine("4. Exit");
             
             number = Convert.ToInt32(Console.ReadLine());
                 if (number == 1)
@@ -48,11 +40,7 @@ namespace ATM_Machine.Functions
                 {
                     Account.GenerateCode(id);
                 }
-                else if (number == 4)
-                {
-                    Account.MakeTransfer(id);
-                }
-            } while (number != 5);
+            } while (number != 4);
         }
     }
 }
