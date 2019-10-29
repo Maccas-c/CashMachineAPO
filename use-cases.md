@@ -11,8 +11,8 @@ Serwisant					uzupełnianie pieniędzy w bankomacie, sprawdzanie stanu techiczne
 
 Słownik
 -------
-ATM - 
-PIN - 
+ATM - automated teller machine
+PIN - osobisty numer identyfikacyjny
 
 Przypadki użycia
 ----------------
