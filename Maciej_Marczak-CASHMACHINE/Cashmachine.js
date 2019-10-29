@@ -90,17 +90,17 @@ const pinOwner = searchpin(parseInt(pin));
 while(exitcommand != 4){
 var action = prompt("Wprowadz co chcesz zrobic");
     if(action=="1"){
-      alert("Stan konta to:" + getbalance(pinOwner));
+      alert("Stan konta to: " + getbalance(pinOwner));
       continueATM()
     }
     else if (action=="2"){
       money = prompt("Wprowadz wartosc jaka chcesz wplacic:")
-      alert("Stan konta po transakcji to :" + depositCash(pinOwner,money)+ "$")
+      alert("Stan konta po transakcji to: " + depositCash(pinOwner,money)+ "$")
       continueATM()
     }
     else if(action=="3"){
       money = prompt("Wprowadz wartosc jaka chcesz wyplacic:")
-      alert("Stan konta po transakcji to :" + withdrawCash(pinOwner,money) + "$")
+      alert("Stan konta po transakcji to: " + withdrawCash(pinOwner,money) + "$")
       continueATM()
     }
     else {
