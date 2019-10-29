@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ATM_Machine.Functions
 {
-    class ShowPanel
+    public class ShowPanel
     {
         public static void ShowStart()
         {
@@ -25,8 +25,7 @@ namespace ATM_Machine.Functions
             Console.WriteLine("1. Show current account status");
             Console.WriteLine("2. Withdraw money");
             Console.WriteLine("3. Get code for phone");
-            Console.WriteLine("4. Make a transfer");
-            Console.WriteLine("5. Exit");
+            Console.WriteLine("4. Exit");
             
             number = Convert.ToInt32(Console.ReadLine());
                 if (number == 1)
@@ -41,12 +40,7 @@ namespace ATM_Machine.Functions
                 {
                     Account.GenerateCode(id);
                 }
-                else if (number == 4)
-                {
-                    Console.WriteLine("Enter account number");
-                    Account.MakeTransfer(id);
-                }
-            } while (number != 5);
+            } while (number != 4);
         }
     }
 }

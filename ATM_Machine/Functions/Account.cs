@@ -75,11 +75,7 @@ namespace ATM_Machine.Functions
             {
                 Console.WriteLine("You don't have enough money");
             }
-        }
-
-        public static void MakeTransfer(Guid cardId)
-        {
-
-        }
+        }       
     }
 }
+
