@@ -70,7 +70,7 @@ function searchpin(pin){
     return Owner[3]
   }
   else {
-    return console.log("Nie ma takiego uzytkownika")
+    return alert("Nie ma takiego uzytkownika")
   }
 }
 
