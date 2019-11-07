@@ -1,7 +1,7 @@
 Use Case 1: Wypłata pieniędzy
 =====================
 
-**Aktor podstawowy:** ...
+**Aktor podstawowy:** 
 Klient
 
 Główni odbiorcy i oczekiwania względem systemu:
@@ -24,44 +24,40 @@ Przeprowadzona została bezpiczena transakcja, pieniądze zostały pobrane z kon
 Scenariusz główny (ścieżka podstawowa):
 ---------------------------------------
 
-  1. Klient przychodzi do bankomatu w celu pobrania pieniędzy.
-  2. Bankomat wyświetla reklamę banku i komunikat WŁÓŻ KARTĘ.
-  3. Klient wkłada kartę w odpowiednie miejsce.
-  4. Bankomat wyświetla informacje o dostepnych językach.
-  5. Klient wybiera dowolny język, w którym chce aby bankomat wyświetlał polecenia.
-  6. Bankomat prosi o podanie kodu PIN.
-  7. Po pomyślnej weryfikacji klientowi zostają wyświetlone możliwe do wypłacenia kwoty razem z opcją INNA KWOTA.
-  8. Klient wybiera dowolną kwotę i akceptuje wybór.
-  9. Bankomat sprawdza dostępność pieniędzy w bankomacie. 
-  10. Bankomat wysuwa kartę i prosi o jej zabranie.
-  11. Gdy klient zabierze kartę, bankomat wypłaca gotówkę.
-  12. Bankomat pyta czy klient potrzebuje potwierdzenie. 
+  1. Klient wkłada kartę i wybiera opcję WYPŁAĆ PIENIĄDZE.
+  2. Bankomat prosi o podanie kodu PIN.
+  3. Po pomyślnej weryfikacji klientowi zostają wyświetlone możliwe do wypłacenia kwoty razem z opcją INNA KWOTA.
+  4. Klient wybiera dowolną kwotę i akceptuje wybór.
+  5. Bankomat sprawdza dostępność pieniędzy w bankomacie. 
+  6. Bankomat wysuwa kartę i prosi o jej zabranie.
+  7. Gdy klient zabierze kartę, bankomat wypłaca gotówkę.
+  8. Bankomat pyta czy klient potrzebuje potwierdzenie. 
 
 Rozszerzenia (ścieżki alternatywne):
 ------------------------------------
 
- 6a. Podany kod PIN jest błędny:
+ 2a. Podany kod PIN jest błędny:
 	1. Bankomat wyświetla informację, że podany PIN jest niepoprawny i prosi o jego ponowne wpisanie.
 	2. Klient podaje PIN.
 		2a. Klient trzykrotnie podał błędny PIN:
 			1. System zastrzega kartę i nie wydaje jej klientowi.
 
- 7a. Klient wybrał opcję INNA KWOTA:
+ 3a. Klient wybrał opcję INNA KWOTA:
 	1. Klient wpisuje kwotę, która go interesuje.
 		1a. Bankomat wydaje żądaną kwotę klientowi.
 		1b. Bankomat nie obsługuje nominałów podanych przez klienta:
 			1. Bankomat wyświetla informację o możliwych do wydania nominałów.
 			2. Klient wybiera jedną z podanych opcji lub kończy operację. 
 
- 9a. Pieniędzy brakuje w bankomacie:
+ 5a. Pieniędzy brakuje w bankomacie:
 	1. System wyświetla informację o braku środków.
 	2. Wysyłana jest informacja do serwisu.
 	3. System wyświetla możliwe do wypłacenia kwoty, jeśli takie są.
 
- 10a. Klient nie zabiera karty z bankomatu przez dłuższy czas:
+ 6a. Klient nie zabiera karty z bankomatu przez dłuższy czas:
 	1. Bankomat zastrzega kartę i wsuwa ją do bankomatu.
 
- 12a. Klient chce potwierdzenie:
+ 8a. Klient chce potwierdzenie:
 	1. System uzupełnia danymi transakcji potwierdzenie i drukuje je.
 
 
@@ -77,11 +73,11 @@ Wymagania specjalne:
 Wymagania technologiczne oraz ograniczenia na wprowadzane dane:
 ---------------------------------------------------------------
 
- 2a. Konieczny czytnik kart z podświetlonym miejscem do włożenia karty.
+ 1a. Konieczny czytnik kart z podświetlonym miejscem do włożenia karty.
 
- 6a. PIN jest wprowadzony z klawiatury.
+ 2a. PIN jest wprowadzony z klawiatury.
 
- 12a. Drukarka czarno-biała.
+ 8a. Drukarka czarno-biała.
 
 Kwestie otwarte:
 ----------------
