@@ -19,6 +19,7 @@ Warunki wstępne:
 - Klient wybrał opcję sprawdzenia stanu konta.
 
 Warunki końcowe:
+----------------
 
 - Bankomat wyświetlił poprawną ilość środków dostępnych na koncie naszego klienta.
 
