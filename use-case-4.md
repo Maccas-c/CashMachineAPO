@@ -1,4 +1,4 @@
-Use Case 2: Zakup kodu do telefonii pre-paidowej.
+Use Case 4: Zakup kodu do telefonii pre-paidowej.
 =====================
 
 **Aktor podstawowy:** Klient
@@ -45,8 +45,6 @@ Rozszerzenia (ścieżki alternatywne):
  1a. Upłynął termin ważności karty. Karta jest wtedy wydana i wyświetla się komunikat "upłynął termin ważności karty". 	
 
  4a. Jeśli podany kod PIN jest błędny 1 lub 2-krotnie to Bankomat wyświetla komunikat o niepoprawnym kodzie PIN i prosi o ponowną próbę.
-
- 4b. Jeśli podany kod PIN jest błędy 3-krotnie to Bankomat zastrzega sobie kartę i nie wydaje jej klientowi.
 
  8a. Klient wykonuje inną interakcję z bankomatem.
 
