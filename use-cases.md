@@ -21,7 +21,7 @@ Przypadki użycia
 Użytkownik wkłada kartę do bankomatu. System wyświetla możliwe opcje. Użytkownik wybiera WYPŁAĆ PIENIĄDZE i podaje kod PIN. System sprawdza jego poprawność. Użytkownik podaje kwotę do wypłacenia. Bankomat sprawdza dostępne środki. Na koniec oddaje kartę użytkownikowi i wypłaca pieniądze.  
 
 ### Use case 2: Wyświetlenie stanu konta
-Użytkownik wkłada kartę do bankomatu. System wyświetla możliwe opcje. Użytkownik wybiera opcję POKAŻ SALDO i podaje kod PIN. System sprawdza jego poprawność. Bankomat wyświetla dostępne na karcie środki. Na koniec użytkownik. Na koniec oddaje kartę użytkownikowi.   
+Użytkownik wkłada kartę do bankomatu. System wyświetla możliwe opcje. Użytkownik wybiera opcję POKAŻ SALDO i podaje kod PIN. System sprawdza jego poprawność. Bankomat wyświetla dostępne na karcie środki. Na koniec oddaje kartę użytkownikowi.   
 
 ### Use case 3: Robienie przelewu
 Użytkownik wkłada kartę do bankomatu. System sprawdza czy użytkownik zgłosił chęć wykonywania przelewów przez bankomat. System wyświetla możliwe opcje. Użytkownik wybiera opcję ZRÓB PRZELEW i podaje kod PIN. System sprawdza jego poprawność. Użytkownik podaje numer konta bankowego i nazwisko użytkownika, któremu chce przesłać pieniądze oraz temat. System sprawdza dane i wysyła na telefon użytkownika krótki kod w celu weryfikacji. Użytkownik wpisuje kod sms. System weryfikuje go i wykonuje przelew. Na koniec oddaje kartę użytkownikowi.
