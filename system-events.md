@@ -31,7 +31,7 @@ Use case 3: Robienie przelewu
   - wybranie opcji "zakończ operację" przez klietna
   - zabranie karty przez klienta
     
-Use case 4: Robienie przelewu
+Use case 4: Zakup kodu do telefonii pre-paidowej
 -----------------
 
   - włożenie karty do bankomatu przez klienta
@@ -40,7 +40,7 @@ Use case 4: Robienie przelewu
   - wybranie opcji "zakończ operację" przez klietna
   - zabranie karty przez klienta
   
-Use case 4: Uzupełnienie pieniędzy
+Use case 5: Uzupełnienie pieniędzy
 -----------------
 
   - wlożenie specjalnej karty przez serwisanta

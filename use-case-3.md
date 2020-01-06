@@ -6,49 +6,52 @@ Aktor podstawowy: Klient
 Główni odbiorcy i oczekiwania względem systemu:
 -----------------------------------------------
 
-- Klient: oczekuje szybkiego i bezpiecznego przelewu na konto innej ososby 
+- Klient: oczekuje szybkiego i bezpiecznego przelewu pieniędzy na konto innej ososby 
 
 - Obsługa w banku: chce poprawnie realizować przelewy w bankomacie. oczekuje bezpiecznego połączenia z kontem bankowym klienta
 
 Warunki wstępne:
 ----------------
-Klient banku ma kartę Klient banku musi mieć kartę bankową, aby rozpocząć tę transkację rozpocząć.
+Klient posiada aktualną kartę bankową, chce wykonać przelew przez bankomat.
 
-Bankomat musi być w stanie, w którym jest gotowy do przetworzenia żądania klienta: jest gotowy do przyjęcia karty bankomatowej w celu rozpoczęcia transakcji i wyświetla powitanie klienta na wyświetlaczu bankomatu.
 
 Warunki końcowe:
 ----------------
-Klient banku otrzyma zwrot karty bankowej, albo karta bankowa zostanie zachowana, a klient banku zostanie powiadomiony o tym, gdzie zostanie wysłana.
 
-Przeprowadzona została bezpiczena transakcja, pieniądze zostały pobrane z konta klienta. Klient przelał daną kwotę do innego klienta i ta kwota została pomyślnie pobrana z jego konta i dostarczona do drugiego klienta.
+Przeprowadzona została bezpiczena transakcja, pieniądze zostały pobrane z konta klienta i przesłane na konto innego klienta.
 
-System powinien być gotowy do wykonania kolejnej transakcji.
 
 Scenariusz główny (ścieżka podstawowa):
 ---------------------------------------
-1. Klient wkłada kartę .
-2. Wprowadź kod PIN Bankomat prosi o kod PIN klienta. Klient banku wprowadza kod PIN. Bankomat weryfikuje PIN.
-3. Wybierz „Przelew środków” Bankomat wyświetla różne alternatywy dostępne w tym urządzeniu. Klient banku wybiera „Przelew środków” .
-4. Wpisz „Z konta”, „Na konto” i kwotę. Bankomat prosi o konto do wypłaty, konto do wpłaty i kwotę do przelewu. Klient banku wprowadza rachunki i kwotę 
-5. Przelewanie środków Bankomat wysyła identyfikator karty, PIN, kwotę i konto do banku. Bank odpowiada, że ​​przelew został zaakceptowany. 
-6. Odbierz kartę i pokwitowanie bankomat zwraca kartę bankową klientowi banku i drukuje pokwitowanie. 
+1. Klient wkłada kartę i wybiera opcję „Przelew środków”.
+2. Bankomat prosi o podanie kodu PIN.
+3. Bankomat dokonuje weryfikacji.
+4. Bankomat wyświetla formularz do wypełnienia.
+5. Klient wpisuje  numer rachunku (na który chce zrobić przelew), kwotę oraz tytuł przelewu.
+6. Bankomat weryfikuje dostępne na karcie środki i wysyła identyfikator karty, kwotę oraz numer konta do banku.
+7. Bankomat otrzymuje informację zwrotną z banku o pomyślności transakcji i wyświetla komunikat "Przelew wysłany".
+8. Bankomat wysuwa kartę i prosi o jej zabranie.
+9. Bankomat pyta czy klient potrzebuje potwierdzenie dokonania transakcji.
 
 Rozszerzenia (ścieżki alternatywne):
 ------------------------------------
 
- 1a. Karta nie jest ważna .  Włóż kartę bankową podstawowego przepływu, jeśli karta nie jest ważna, zostaje wyrzucona do klienta banku z komunikatem „przepraszam, że karta nie jest ważna”.  
+ 2a. Błędny PIN:
+		1. Bankomat wyświetla komunikat "Podany PIN jest błędny. Podaj ponownie PIN.".
+		2. Klient wpisuje PIN:
+			2a. Klient podaje trzy razy błędny PIN:
+				1. System blokuje kartę.
 
- 2a. Błędny PIN , Wprowadź PIN , bankomat wskazuje, że PIN jest nieprawidłowy. Bankomat wyświetla komunikat „zły PIN” do klienta banku. Klient banku ma trzy próby, aby zrobić to dobrze. Jeśli klient banku poprawnie wprowadzi kod PIN, to przechodzimy do kroku 3. W przeciwnym razie karta jest przechowywana przez urządzenie.
+ 5a. Podany przez klienta numer rachunku nie istnieje:
+		1. Bankomat wyświetle komunikat "Nieprawidłowy numer rachunku. Podaj ponownie numer rachunku.":
+		2. Klient wpisuje numer rachunku.
 
- 4a.Jeśli bankomat wskazuje ,że konto nie posiada wystarczających środków , bankomat odpowiada komunikatem "Nie masz wystarczających środków ".1a. Klient wprowadza nowe dane i inna ilość środków która pozwala mu dokonać dany przelew.
+ 6a. Na karcie nie ma wystarczających środków: 
+		1. Bankomat wyświetla komunikat "Nie masz wystarczających środków. Podaj nową kwotę.":
+				1a. Klient ponownie podaje kwotę do przelewu.
 
- 5a. Jeśli bankomat wskazuje, że konto „xyz” nie istnieje, bankomat odpowiada komunikatem „nie istnieje konto na które chcesz przelać środki”. 1a. Bankomat wyświetla komunikat " Czy chcesz ponowić przelew  ? .
- 
- 5b. Przekaż środki, jeśli bank nie odpowie (limit czasu wynosi 25 sekund), bankomat nie może ustalić, czy transakcja została wykonana, czy utracona. Uzyskamy na ekranie wiadomość: „Twój przelew może został zrealizowany lub nie. Skontaktuj się z bankiem, aby się dowiedzieć”.
-
- 6a. Po wydaniu karty bankowej klient czeka na pokwitowanie lecz bankomat przestaje działać.
-
- 6b. Po transakcji przelewu , bankomat przestaje działać i nie wydaje ani karty ani nie drukuje potwierdzenia.
+ 7a. Bank nie potwierdza wykonania przelewu:
+		1. Bankomat wyświetla komunikat "Przelew nie został wysłany. Skontaktuj się z bankiem".
 
 Wymagania specjalne:
 --------------------
@@ -70,7 +73,7 @@ Wymagania technologiczne oraz ograniczenia na wprowadzane dane:
 
  2a. PIN jest wprowadzony z klawiatury lub z klawiatury na ekranie dotykowym.
 
- 6a. Drukarka do potwierdzeń.
+ 9a. Drukarka do potwierdzeń.
 
 Kwestie otwarte:
 ----------------
