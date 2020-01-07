@@ -28,7 +28,7 @@ Scenariusz główny (ścieżka podstawowa):
 3. Klient wprowadza kod PIN.
 4. Bankomat dokonuje weryfikacji.
 5. Bankomat wyświetla formularz do wypełnienia.
-6. Klient wpisuje  numer rachunku (na który chce zrobić przelew), kwotę oraz tytuł przelewu.
+6. Klient wpisuje numer rachunku (na który chce zrobić przelew), kwotę oraz tytuł przelewu.
 7. Bankomat weryfikuje dostępne na karcie środki i wysyła identyfikator karty, kwotę oraz numer konta do banku.
 8. Bankomat otrzymuje informację zwrotną z banku o pomyślności transakcji i wyświetla komunikat "Przelew wysłany".
 9. Bankomat wysuwa kartę i prosi o jej zabranie.
@@ -40,7 +40,7 @@ Scenariusz główny (ścieżka podstawowa):
 Rozszerzenia (ścieżki alternatywne):
 ------------------------------------
 
- 2a. Błędny PIN:
+ 3a. Błędny PIN:
 		1. Bankomat wyświetla komunikat "Podany PIN jest błędny. Podaj ponownie PIN.".
 		2. Klient wpisuje PIN:
 		2a. Klient podaje trzy razy błędny PIN:
