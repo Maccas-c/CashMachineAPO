@@ -61,7 +61,8 @@ Rozszerzenia (ścieżki alternatywne):
  		1.Bankomat wyświetla komunikat "Karta nie została odebrana. Skontaktuj się z bankiem".
 		2.Bankomat blokuję możliwość wyciągnięcia karty.
 
- 12a.Klient chce potwierdzenie.System uzupełnia danymi transakcji potwierdzenie i drukuje je.
+ 12a.Klient chce potwierdzenie.
+ 		1.System uzupełnia danymi transakcji potwierdzenie i drukuje je.
 
 
 Wymagania specjalne:
