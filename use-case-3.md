@@ -80,9 +80,9 @@ Wymagania technologiczne oraz ograniczenia na wprowadzane dane:
 
  1a. Konieczny czytnik kart z podświetlonym miejscem do włożenia karty.
 
- 2a. PIN jest wprowadzony z klawiatury lub z klawiatury na ekranie dotykowym.
+ 3a. PIN jest wprowadzony z klawiatury lub z klawiatury na ekranie dotykowym.
 
- 9a. Drukarka do potwierdzeń.
+ 12a. Drukarka do potwierdzeń.
 
 Kwestie otwarte:
 ----------------
