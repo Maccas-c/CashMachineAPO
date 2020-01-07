@@ -52,7 +52,7 @@ Rozszerzenia (ścieżki alternatywne):
 
  7a. Na karcie nie ma wystarczających środków: 
 		1. Bankomat wyświetla komunikat "Nie masz wystarczających środków. Podaj nową kwotę.":
-				1a. Klient ponownie podaje kwotę do przelewu.
+		1a. Klient ponownie podaje kwotę do przelewu.
 
  8a. Bank nie potwierdza wykonania przelewu:
 		1. Bankomat wyświetla komunikat "Przelew nie został wysłany. Skontaktuj się z bankiem".
