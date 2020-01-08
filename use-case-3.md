@@ -35,6 +35,8 @@ Scenariusz główny (ścieżka podstawowa):
 10. Klient odbiera kartę.
 11. Bankomat pyta czy klient potrzebuje potwierdzenie dokonania transakcji.
 12. Klient wybiera wydruk potwierdzenia tranksakcji.
+13. Bankomat drukuję potwierdzenie transakcji.
+14. Klient odbiera potwierdzenie transakcji.
 
 
 Rozszerzenia (ścieżki alternatywne):
@@ -60,7 +62,8 @@ Rozszerzenia (ścieżki alternatywne):
  10a. Klient nie odebrał karty z bankomatu.
  		1.Bankomat wyświetla komunikat "Karta nie została odebrana. Skontaktuj się z bankiem".
 		2.Bankomat blokuję możliwość wyciągnięcia karty.
-
+ 14a. Klient nie odebrał potwierdzenia transakcji.
+ 		1.System kończy operację.
 
 Wymagania specjalne:
 --------------------
