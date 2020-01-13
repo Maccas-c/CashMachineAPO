@@ -15,7 +15,6 @@ Warunki wstępne:
 ----------------
 
 Klient posiada kartę bankomatową z możliwością zakupu doładowań.
-Karta klienta została przyjęta przez bankomat oraz potwierdzona jest zgodność kodu PIN.
 Klient wybrał opcję zakupu kodu do telefonii pre-paidowej.
 
 Warunki końcowe:
@@ -35,7 +34,7 @@ Scenariusz główny (ścieżka podstawowa):
   5. Klient wybiera opcję zakupu kodu.
   6. Bankomat sprawdza ilość dostępnych środków na koncie klienta.
   7. Bankomat wyświetla ilość dostępnych środków na koncie klienta.
-  8. Klient może wybrać kolejną interakcję, bądź zakończyć interakcję.
+  8. Klient może wykonać inną operację na koncie, bądź zakończyć interakcję z bankomatem.
   9. Klient wybiera opcje zakończenia interakcji.
   10. Bankomat wysuwa kartę.
   11. Klient odbiera kartę.
@@ -46,7 +45,7 @@ Rozszerzenia (ścieżki alternatywne):
 
  4a. Jeśli podany kod PIN jest błędny 1 lub 2-krotnie to Bankomat wyświetla komunikat o niepoprawnym kodzie PIN i prosi o ponowną próbę.
 
- 8a. Klient wykonuje inną interakcję z bankomatem.
+ 8a. Klient wykonuje inną operację na koncie bankowym. Na przykład wypłata, bądź przelew.
 
  11a. Jeżeli klient pozostawi kartę w bankomacie przez dłuższy czas. Bankomat wciąga ją i zastrzega.
 

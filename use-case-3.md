@@ -25,33 +25,45 @@ Scenariusz główny (ścieżka podstawowa):
 ---------------------------------------
 1. Klient wkłada kartę i wybiera opcję „Przelew środków”.
 2. Bankomat prosi o podanie kodu PIN.
-3. Bankomat dokonuje weryfikacji.
-4. Bankomat wyświetla formularz do wypełnienia.
-5. Klient wpisuje  numer rachunku (na który chce zrobić przelew), kwotę oraz tytuł przelewu.
-6. Bankomat weryfikuje dostępne na karcie środki i wysyła identyfikator karty, kwotę oraz numer konta do banku.
-7. Bankomat otrzymuje informację zwrotną z banku o pomyślności transakcji i wyświetla komunikat "Przelew wysłany".
-8. Bankomat wysuwa kartę i prosi o jej zabranie.
-9. Bankomat pyta czy klient potrzebuje potwierdzenie dokonania transakcji.
+3. Klient wprowadza kod PIN.
+4. Bankomat dokonuje weryfikacji.
+5. Bankomat wyświetla formularz do wypełnienia.
+6. Klient wpisuje numer rachunku (na który chce zrobić przelew), kwotę oraz tytuł przelewu.
+7. Bankomat weryfikuje dostępne na karcie środki i wysyła identyfikator karty, kwotę oraz numer konta do banku.
+8. Bankomat otrzymuje informację zwrotną z banku o pomyślności transakcji i wyświetla komunikat "Przelew wysłany".
+9. Bankomat wysuwa kartę i prosi o jej zabranie.
+10. Klient odbiera kartę.
+11. Bankomat pyta czy klient potrzebuje potwierdzenie dokonania transakcji.
+12. Klient wybiera wydruk potwierdzenia tranksakcji.
+13. Bankomat drukuję potwierdzenie transakcji.
+14. Klient odbiera potwierdzenie transakcji.
+
 
 Rozszerzenia (ścieżki alternatywne):
 ------------------------------------
 
- 2a. Błędny PIN:
+ 3a. Błędny PIN:
 		1. Bankomat wyświetla komunikat "Podany PIN jest błędny. Podaj ponownie PIN.".
 		2. Klient wpisuje PIN:
-			2a. Klient podaje trzy razy błędny PIN:
-				1. System blokuje kartę.
+		2a. Klient podaje trzy razy błędny PIN:
+			1. System blokuje kartę.
 
- 5a. Podany przez klienta numer rachunku nie istnieje:
+ 6a. Podany przez klienta numer rachunku nie istnieje:
 		1. Bankomat wyświetle komunikat "Nieprawidłowy numer rachunku. Podaj ponownie numer rachunku.":
 		2. Klient wpisuje numer rachunku.
 
- 6a. Na karcie nie ma wystarczających środków: 
+ 7a. Na karcie nie ma wystarczających środków: 
 		1. Bankomat wyświetla komunikat "Nie masz wystarczających środków. Podaj nową kwotę.":
-				1a. Klient ponownie podaje kwotę do przelewu.
+		1a. Klient ponownie podaje kwotę do przelewu.
 
- 7a. Bank nie potwierdza wykonania przelewu:
+ 8a. Bank nie potwierdza wykonania przelewu:
 		1. Bankomat wyświetla komunikat "Przelew nie został wysłany. Skontaktuj się z bankiem".
+		
+ 10a. Klient nie odebrał karty z bankomatu.
+ 		1.Bankomat wyświetla komunikat "Karta nie została odebrana. Skontaktuj się z bankiem".
+		2.Bankomat blokuję możliwość wyciągnięcia karty.
+ 14a. Klient nie odebrał potwierdzenia transakcji.
+ 		1.System kończy operację.
 
 Wymagania specjalne:
 --------------------
@@ -71,9 +83,9 @@ Wymagania technologiczne oraz ograniczenia na wprowadzane dane:
 
  1a. Konieczny czytnik kart z podświetlonym miejscem do włożenia karty.
 
- 2a. PIN jest wprowadzony z klawiatury lub z klawiatury na ekranie dotykowym.
+ 3a. PIN jest wprowadzony z klawiatury lub z klawiatury na ekranie dotykowym.
 
- 9a. Drukarka do potwierdzeń.
+ 12a. Drukarka do potwierdzeń.
 
 Kwestie otwarte:
 ----------------
