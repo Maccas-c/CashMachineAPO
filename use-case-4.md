@@ -34,8 +34,7 @@ Scenariusz główny (ścieżka podstawowa):
   5. Klient wybiera opcję zakupu kodu.
   6. Bankomat sprawdza ilość dostępnych środków na koncie klienta.
   7. Bankomat wyświetla ilość dostępnych środków na koncie klienta.
-  8. Klient może wykonać inną operację na koncie, bądź zakończyć interakcję z bankomatem.
-  9. Klient wybiera opcje zakończenia interakcji.
+  8. Klient wybiera opcję zakończ.
   10. Bankomat wysuwa kartę.
   11. Klient odbiera kartę.
 
@@ -45,7 +44,7 @@ Rozszerzenia (ścieżki alternatywne):
 
  4a. Jeśli podany kod PIN jest błędny 1 lub 2-krotnie to Bankomat wyświetla komunikat o niepoprawnym kodzie PIN i prosi o ponowną próbę.
 
- 8a. Klient wykonuje inną operację na koncie bankowym. Na przykład wypłata, bądź przelew.
+ 8a. Klient wybiera inną z opcji spośród: przelew, wpłata, wypłata, sprawdzenie stanu konta.
 
  11a. Jeżeli klient pozostawi kartę w bankomacie przez dłuższy czas. Bankomat wciąga ją i zastrzega.
 
