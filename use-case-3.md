@@ -18,7 +18,7 @@ Klient posiada aktualną kartę bankową, chce wykonać przelew przez bankomat.
 Warunki końcowe:
 ----------------
 
-Przeprowadzona została bezpiczena transakcja, pieniądze zostały pobrane z konta klienta i przesłane na konto innego klienta.
+Przeprowadzona została bezpieczna transakcja, pieniądze zostały pobrane z konta klienta i przesłane na konto innego klienta.
 
 
 Scenariusz główny (ścieżka podstawowa):
