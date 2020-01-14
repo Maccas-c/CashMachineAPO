@@ -85,7 +85,7 @@ Wymagania technologiczne oraz ograniczenia na wprowadzane dane:
 
  3a. PIN jest wprowadzony z klawiatury lub z klawiatury na ekranie dotykowym.
 
- 12a. Drukarka do potwierdzeń.
+ 13a. Drukarka do potwierdzeń.
 
 Kwestie otwarte:
 ----------------
